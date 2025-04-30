@@ -63,7 +63,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div style={{ maxWidth: "800px", margin: "0 auto", padding: "20px" }}>
+    <div style={{ maxWidth: "800px", margin: "0 auto", padding: "20px", fontFamily: "monospace" }}>
       <h1 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "10px" }}>
         TINY SMART CONTRACT
       </h1>
@@ -98,7 +98,7 @@ export default function Home() {
             Title:
           </label>
           <input
-            style={{ width: "100%", padding: "10px" }}
+            style={{ width: "100%", padding: "10px", fontFamily: "monospace" }}
             type="text"
             {...register("title")}
           />
@@ -123,7 +123,7 @@ export default function Home() {
             Amount:
           </label>
           <input
-            style={{ width: "100%", padding: "10px" }}
+            style={{ width: "100%", padding: "10px", fontFamily: "monospace" }}
             type="number"
             {...register("amount")}
           />
@@ -136,7 +136,7 @@ export default function Home() {
             Deadline:
           </label>
           <input
-            style={{ width: "100%", padding: "10px" }}
+            style={{ width: "100%", padding: "10px", fontFamily: "monospace" }}
             type="date"
             {...register("deadline")}
           />
@@ -154,6 +154,7 @@ export default function Home() {
             fontSize: "16px",
             cursor: "pointer",
             marginTop: "10px",
+            fontFamily: "monospace"
           }}
         >
           Create Campaign
