@@ -53,7 +53,7 @@ export const CrowdFundingProvider = ({ children }) => {
     }));
   };
 
-  const ifWalletConnected = async () => {
+  const prefetch = async () => {
     try {
       if (!window.ethereum) {
         setError("Install Metamask");
@@ -76,10 +76,6 @@ export const CrowdFundingProvider = ({ children }) => {
     }
   };
 
-  useEffect(() => {
-    ifWalletConnected();
-  }, []);
-
   const connectWallet = async () => {
     try {
       if (!window.ethereum) {
@@ -94,6 +90,10 @@ export const CrowdFundingProvider = ({ children }) => {
       console.log("Something wrong while connecting to the wallet", error);
     }
   };
+
+  useEffect(() => {
+    prefetch();
+  }, []);
 
   return (
     <CrowdFundingContext.Provider

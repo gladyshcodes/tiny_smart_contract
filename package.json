@@ -11,6 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.19",
     "@heroicons/react": "^2.2.0",
+    "@hookform/resolvers": "^5.0.1",
     "@next/font": "^13.5.11",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "autoprefixer": "^10.4.21",
@@ -21,8 +22,10 @@
     "postcss": "^8.5.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hook-form": "^7.56.1",
     "utf-8-validate": "^5.0.10",
-    "web3modal": "^1.9.12"
+    "web3modal": "^1.9.12",
+    "zod": "^3.24.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
